@@ -1,0 +1,78 @@
+.top {
+    -fx-min-height: 200;
+    -fx-max-height: 200;
+    -fx-alignment: center;
+}
+
+.mid {
+    -fx-min-height: 200;
+    -fx-max-height: 200;
+    -fx-alignment: center;
+}
+
+.spillerKort {
+    -fx-min-height: 200;
+    -fx-max-height: 200;
+    -fx-alignment: center;
+}
+
+.actionButtons {
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+    -fx-alignment: center;
+}
+
+.bunn {
+    -fx-min-height: 250;
+    -fx-max-height: 250;
+}
+
+.saldo {
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    
+}
+
+.start {
+    -fx-alignment: center;
+    -fx-font-size: 15px;
+}
+
+.bet {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+.balance {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+.bakgrunn{
+    -fx-background-image: url("../photos/bord.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.kort{
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, black, 8, 0, 0, 0);
+}
+
+.kortene .label{
+    -fx-text-fill: white;
+    -fx-spacing: 10;
+    -fx-font-size: 40px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, black, 8, 0, 0, 0);
+}
+
+.nede {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}

@@ -1,0 +1,93 @@
+
+
+.top-section {
+    -fx-padding: 10;
+    -fx-spacing: 20;
+    -fx-background-image: url("../photos/grønnBakgrunn.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.balance-box {
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-pref-width: 200px;
+    -fx-background-image: url("../photos/casinoMoney.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.welcome-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.bottom-section {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-pref-height: 180px;
+    -fx-background-image: url("../photos/grønnBakgrunn.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.game-buttons {
+    -fx-font-size: 16px;
+    -fx-spacing: 20;
+    -fx-pref-height: 140px;
+    -fx-pref-width: 140px;
+    -fx-background-radius: 5;
+}
+
+#messageLabel {
+    -fx-text-fill: lightgray;
+    -fx-font-size: 12px;
+    -fx-alignment: center;
+    -fx-pref-height: 20px;
+    -fx-min-height: 20px;
+    -fx-max-height: 20px;
+}
+
+.money-buttons {
+    -fx-min-width: 180px;
+}
+
+.saldoLabel {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.background {
+    -fx-background-image: url("../photos/casinoBackground.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.toppTekst {
+    -fx-text-fill: white;
+    -fx-padding: 5;
+}
+.user-info {
+    -fx-background-color: gray;
+    -fx-padding: 0 10 0 0;
+    -fx-background-radius: 3;
+}
+
+.blackjack-button {
+    -fx-font-size: 16px;
+    -fx-spacing: 20;
+    -fx-pref-height: 140px;
+    -fx-pref-width: 140px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../photos/BlackJack.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.blackjack-button:hover {
+    -fx-background-image: url("../photos/dealing.jpg");
+}

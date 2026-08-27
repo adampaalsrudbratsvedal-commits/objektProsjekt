@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<StackPane fx:id="root" styleClass="bakgrunn" xmlns:fx="http://javafx.com/fxml" fx:controller="casinoProject.controller.BlackjackController">
+
+    <BorderPane>
+        <top>
+            <VBox fx:id="dealerSection" styleClass="top">
+                <Label text="Dealer sine kort:" styleClass="kort" fx:id="dealerLabel"/>
+                <HBox fx:id="dealerCards" styleClass="kortene" />
+            </VBox>
+        </top>
+
+        <center>
+            <VBox styleClass="mid">
+                <VBox fx:id="playerSection" styleClass="spillerKort">
+                    <Label text="Dine kort:" fx:id="playerLabel" styleClass="kort"/>
+                    <HBox fx:id="playerCards" styleClass="kortene" />
+                </VBox>
+
+                <HBox fx:id="actionButtons" styleClass="actionButtons">
+                    <Button text="Hit" fx:id="hitButton" onAction="#handleHit" disable="true"/>
+                    <Button text="Stand" fx:id="standButton" onAction="#handleStand" disable="true"/>
+                    <Button text="Tilbake til meny" fx:id="backButton" onAction="#handleBackToMenu"/>
+                </HBox>
+            </VBox>
+        </center>
+
+        <bottom>
+            <VBox fx:id="controlPanel" styleClass="bunn">
+                <HBox fx:id="betSection" styleClass="bet">
+                    <Label text="Innsats:" styleClass="saldo"/>
+                    <TextField fx:id="betField" styleClass="start"/>
+                    <Button text="Start runde" fx:id="startButton" onAction="#handleStartRound" styleClass="start" />
+                </HBox>
+
+                <HBox fx:id="balanceSection" styleClass="balance">
+                    <Label fx:id="balanceLabel" text="" styleClass= "nede"/>
+                    <Label fx:id="statusLabel" text="" styleClass= "nede"/>
+                </HBox>
+            </VBox>
+        </bottom>
+    </BorderPane>
+</StackPane>

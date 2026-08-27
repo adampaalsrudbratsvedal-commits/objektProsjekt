@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="casinoProject.controller.MainMenuController">
+
+    <top>
+        <HBox fx:id="topSection" styleClass="top-section">
+            <HBox fx:id="userInfoBox" styleClass="user-info">
+                <Label text="Bruker:" styleClass="toppTekst"/>
+                <Label fx:id="usernameLabel" styleClass="toppTekst" text="---"/>
+                <Label text="Saldo:" styleClass="toppTekst"/>
+                <Label fx:id="balanceLabel" styleClass="toppTekst" text="---"/>
+            </HBox>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <HBox fx:id="loginBox" styleClass="login-box">
+                <TextField fx:id="usernameField" promptText="Brukernavn"/>
+                <Button text="Logg inn" onAction="#handleLogin"/>
+            </HBox>
+        </HBox>
+    </top>
+
+    <right>
+        <VBox fx:id="balanceBox" styleClass="balance-box">
+            <Label text="Saldohåndtering:" styleClass="saldoLabel"/>
+            <TextField fx:id="amountField" promptText="Beløp"/>
+            <Button text="Sett inn" styleClass="money-buttons" onAction="#handleDeposit"/>
+            <Button text="Trekk fra" styleClass="money-buttons" onAction="#handleWithdraw"/>
+        </VBox>
+    </right>
+
+    <center>
+        <VBox fx:id="mainPane" styleClass="background">
+        </VBox>
+    </center>
+
+    <bottom>
+        <VBox fx:id="bottomSection" styleClass="bottom-section">
+            <HBox fx:id="gameButtons" styleClass="game-buttons">
+                <Button text="" fx:id="startBlackjackButton" onAction="#handleStartBlackjack" disable="true" styleClass="blackjack-button"/>
+                <Button text="Kommende spill" disable="true" styleClass="game-buttons"/>
+            </HBox>
+            <Label fx:id="messageLabel" text=""/>
+        </VBox>
+    </bottom>
+    
+</BorderPane>
